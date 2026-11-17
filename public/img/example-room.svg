@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 390 844" width="390" height="844">
+  <!-- Example living room standing in for the live camera feed. Original illustration. -->
+  <defs>
+    <linearGradient id="back" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E4DCCD"/><stop offset=".62" stop-color="#EFE8DC"/><stop offset="1" stop-color="#F6F1E8"/>
+    </linearGradient>
+    <linearGradient id="side" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#CFC4B1"/><stop offset="1" stop-color="#DDD3C2"/>
+    </linearGradient>
+    <linearGradient id="ceil" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E9E3D8"/><stop offset="1" stop-color="#F2EDE4"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5E412D"/><stop offset="1" stop-color="#3F2B1E"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#C9DCE6"/><stop offset=".7" stop-color="#E7EEF0"/><stop offset="1" stop-color="#D9E3D6"/>
+    </linearGradient>
+    <linearGradient id="beam" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFF8EA" stop-opacity=".55"/><stop offset="1" stop-color="#FFF8EA" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vig" cx=".55" cy=".45" r=".75">
+      <stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".35"/>
+    </radialGradient>
+    <linearGradient id="chair" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#CBBFA9"/><stop offset="1" stop-color="#AFA28B"/>
+    </linearGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .12 0"/></filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="6"/></filter>
+  </defs>
+
+  <!-- ceiling, walls, floor -->
+  <polygon points="0,0 390,0 390,92 70,112" fill="url(#ceil)"/>
+  <polygon points="70,112 390,92 390,566 70,548" fill="url(#back)"/>
+  <polygon points="0,0 70,112 70,548 0,650" fill="url(#side)"/>
+  <polygon points="0,650 70,548 390,566 390,844 0,844" fill="url(#floor)"/>
+  <!-- floor planks converging -->
+  <g stroke="#000" stroke-opacity=".18" stroke-width="1.4">
+    <line x1="96" y1="550" x2="-80" y2="844"/><line x1="128" y1="552" x2="10" y2="844"/><line x1="160" y1="554" x2="100" y2="844"/>
+    <line x1="192" y1="556" x2="190" y2="844"/><line x1="224" y1="558" x2="280" y2="844"/><line x1="256" y1="560" x2="370" y2="844"/>
+    <line x1="288" y1="561" x2="460" y2="844"/><line x1="320" y1="563" x2="550" y2="844"/><line x1="352" y1="565" x2="640" y2="844"/>
+  </g>
+  <g stroke="#000" stroke-opacity=".1" stroke-width="1"><line x1="0" y1="700" x2="390" y2="700"/><line x1="0" y1="770" x2="390" y2="770"/></g>
+  <!-- baseboard + crown -->
+  <polygon points="70,540 390,558 390,566 70,548" fill="#F7F3EC"/>
+  <polygon points="0,640 70,540 70,548 0,650" fill="#E9E2D6"/>
+  <polygon points="70,112 390,92 390,98 70,118" fill="#F7F3EC"/>
+
+  <!-- window (back wall, right) + light -->
+  <rect x="254" y="168" width="112" height="236" fill="#FFFFFF"/>
+  <rect x="262" y="176" width="96" height="220" fill="url(#sky)"/>
+  <rect x="306" y="176" width="8" height="220" fill="#FFFFFF"/>
+  <rect x="262" y="280" width="96" height="7" fill="#FFFFFF"/>
+  <rect x="248" y="404" width="124" height="8" fill="#F7F3EC"/>
+  <path d="M240 160 q10 120 -4 254 h18 q6 -130 -2 -254z" fill="#EDE3D2" opacity=".95"/>
+  <path d="M372 158 q-8 126 6 258 h12 v-258z" fill="#EDE3D2" opacity=".95"/>
+  <polygon points="262,412 358,412 420,700 210,700" fill="url(#beam)"/>
+  <polygon points="236,600 360,606 392,690 196,680" fill="#FFF6E2" opacity=".18" filter="url(#soft)"/>
+
+  <!-- art -->
+  <rect x="120" y="226" width="96" height="70" fill="#F7F3EC" stroke="#AD862B" stroke-width="5"/>
+  <circle cx="148" cy="264" r="17" fill="#AD462B"/>
+  <rect x="164" y="244" width="36" height="40" fill="#D8C49A"/>
+
+  <!-- floor lamp (left) -->
+  <rect x="40" y="396" width="3" height="190" fill="#1A1A1A"/>
+  <ellipse cx="41.5" cy="588" rx="16" ry="4" fill="#1A1A1A"/>
+  <polygon points="24,354 60,354 70,400 14,400" fill="#F4ECDC"/>
+  <ellipse cx="42" cy="404" rx="40" ry="18" fill="#FFF3D6" opacity=".35" filter="url(#soft)"/>
+
+  <!-- empty spot shadow (where the new sofa goes) -->
+  <ellipse cx="170" cy="560" rx="88" ry="8" fill="#000" opacity=".12" filter="url(#soft)"/>
+
+  <!-- armchair (right) -->
+  <ellipse cx="300" cy="560" rx="62" ry="10" fill="#000" opacity=".22" filter="url(#soft)"/>
+  <path d="M252 452 q48 -18 96 0 v70 h-96z" fill="url(#chair)"/>
+  <rect x="244" y="494" width="112" height="46" rx="12" fill="#B6A991"/>
+  <rect x="238" y="478" width="20" height="62" rx="9" fill="#A79A82"/>
+  <rect x="342" y="478" width="20" height="62" rx="9" fill="#A79A82"/>
+  <rect x="252" y="540" width="5" height="20" fill="#2E2118"/><rect x="344" y="540" width="5" height="20" fill="#2E2118"/>
+  <rect x="270" y="472" width="34" height="26" rx="8" fill="#AD462B" opacity=".9"/>
+
+  <!-- plant (corner) -->
+  <g transform="translate(150 96)">
+  <path d="M200 500 q-30 -40 -6 -86 q8 40 16 60 q4 -60 30 -84 q-6 56 -12 96 q24 -36 52 -36 q-26 30 -40 60z" fill="#5F704D"/>
+  <path d="M206 500 q-10 -50 10 -74 q2 40 4 70z" fill="#6E7F5B"/>
+  <path d="M196 496 h44 l-6 62 h-32z" fill="#C0583A"/>
+  </g>
+
+  <!-- rug + coffee table (foreground) -->
+  <ellipse cx="190" cy="700" rx="170" ry="46" fill="#D8C49A"/>
+  <ellipse cx="190" cy="700" rx="150" ry="38" fill="none" stroke="#C2AE84" stroke-width="2"/>
+  <ellipse cx="196" cy="680" rx="80" ry="10" fill="#000" opacity=".25" filter="url(#soft)"/>
+  <rect x="128" y="630" width="136" height="14" rx="4" fill="#2E2118"/>
+  <rect x="138" y="644" width="6" height="36" fill="#2E2118"/><rect x="248" y="644" width="6" height="36" fill="#2E2118"/>
+  <rect x="200" y="610" width="26" height="20" rx="4" fill="#AD862B"/>
+  <rect x="150" y="618" width="34" height="12" rx="2" fill="#E9E1D2"/>
+
+  <!-- vignette + grain for a camera feel -->
+  <rect width="390" height="844" fill="url(#vig)"/>
+  <rect width="390" height="844" filter="url(#grain)"/>
+</svg>
