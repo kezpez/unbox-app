@@ -47,12 +47,11 @@ const cartBtn = () => `<button class="round" data-go="cart" aria-label="Cart, ${
 function viewStart() {
   return `<section class="screen start">
     <div class="spacer"></div>
-    <span class="mono" style="color:#fff">New York · est. 2026</span>
     <p class="word">Unbox®</p>
     <div class="outline"><span>FIT</span><span>STYLE</span><span>CONFIDENCE</span></div>
     <p class="sub" style="color:#fff">Furniture that fits your space and your style, from independent Shopify stores.</p>
     <button class="btn" data-go="room">Get started</button>
-    ${S.status ? `<span class="mono" style="color:#fff;text-align:center">Catalog: ${esc(S.status.mode)} · ${esc(S.status.auth)}</span>` : ''}
+    <span class="mono" style="color:#fff;text-align:center">Uses Shopify Catalog</span>
   </section>`;
 }
 
