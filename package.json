@@ -1,0 +1,13 @@
+{
+  "name": "unbox-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "description": "UNBOX: furniture that fits your space and style. Shopify Catalog API + Universal Commerce Protocol prototype.",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node server.js",
+    "mock": "MOCK=1 node server.js",
+    "test": "node test/smoke.js"
+  }
+}
