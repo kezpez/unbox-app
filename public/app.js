@@ -47,9 +47,9 @@ const cartBtn = () => `<button class="round" data-go="cart" aria-label="Cart, ${
 function viewStart() {
   return `<section class="screen start">
     <div class="spacer"></div>
-    <p class="word">Unbox®</p>
+    <p class="word">Unbox</p>
     <div class="outline"><span>FIT</span><span>STYLE</span><span>CONFIDENCE</span></div>
-    <p class="sub" style="color:#fff">Furniture that fits your space and your style, from independent Shopify stores.</p>
+    <p class="sub" style="color:#fff">Find the best furniture to UNBOX that fits your space and your style, from independent Shopify stores.</p>
     <button class="btn" data-go="room">Get started</button>
     <span class="mono" style="color:#fff;text-align:center">Uses Shopify Catalog</span>
   </section>`;
